@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/button"
+    android:background="#963258"
+    tools:context="com.xushuzhan.viewpagertest.SecondActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+
+    <android.support.v4.app.FragmentTabHost
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:background="#123654">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/second_viewpager"
+        android:layout_width="match_parent"
+        android:background="#236951"
+        android:layout_marginTop="100dp"
+        android:layout_height="150dp"/>
+    </android.support.v4.app.FragmentTabHost>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_1"
+        android:text="我是第一个button"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#E9403B"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextColor="#999"
+        android:background="#535535"
+        app:tabSelectedTextColor="#E9403B"
+        app:tabTextAppearance="@style/tab_layout"
+
+
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.design.widget.TabLayout>
+
+    <Button
+        android:text="我是第二个button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#467500"
+        android:id="@+id/button_2"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
